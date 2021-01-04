@@ -18,3 +18,7 @@ def solution(n):
                 break
         
     return answer+1
+
+# 참고할만한 풀이, 등차수열 공식 이용
+def solution(num):
+    return len([i for i in range(1,num+1,2) if num%i==0]) 
